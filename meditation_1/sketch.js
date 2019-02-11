@@ -29,8 +29,9 @@ function onYouTubeIframeAPIReady() {
 let canvas;
 let ytWidth;
 let ytHeight;
-let phrase = "";
-const insults = ["culiao", "culeao", "culeado", "culiaos", "culeados", "culear", "culiar", "madre", "madres", "perra", "conchatumadre", "conchetumare", "la concha de tu madre", "maricón", "maricones", "maraca", "hueco"];
+// let phrase = "Alentar al Colo es nuestro rito m\xE1s importante. Aqu\xED no se permiten ofensas, insultos ni misoginia. Haz click para comenzar.";
+let phrase = "As Colo-Colo fans, supporting the team is our most important ritual. In this ritual insults and misogyny are not allowed. Click to start."
+const insults = ["culiao", "culeao", "culeado", "culiaos", "culeados", "culear", "culiar", "madre", "madres", "perra", "conchatumadre", "conchetumare", "la concha de tu madre", "maricón", "maricones", "maraca", "hueco", "puta", "puto"];
 const SpeechRecognition = webkitSpeechRecognition;
 let boxWidth;
 let boxHeight;
@@ -46,7 +47,7 @@ function setup(){
   boxHeight = windowHeight/3;
   // resize YT player
   player.setSize(ytWidth,ytHeight)
-  player.setPlaybackQuality('default');
+  // player.setPlaybackQuality('default');
 }
 
 // draw
@@ -58,7 +59,8 @@ function draw(){
   fill(200,100);
   rect(width/2, height/2, boxWidth, boxHeight);
   fill(0);
-  textSize(45);
+  // textSize(45);
+  textSize(boxHeight/7);
   textAlign(CENTER, CENTER);
   text(phrase, width/2, height/2, boxWidth, boxHeight);
 }
@@ -69,6 +71,7 @@ function mousePressed(){
   }
   else {
     player.playVideo();
+    phrase = "";
     getSpeech();
     hasInsulted == false;
   }
@@ -91,8 +94,8 @@ const getSpeech = () => {
     for(let i = 0; i < insults.length; i++){
       const insult = insults[i];
       if(phrase.includes(insult)){
-        // phrase = insults[i] + " es un insulto, tu ritual ha fracasado";
-        phrase = insults[i] + " is an insult, your ritual has failed =/";
+        phrase = "\"" + insults[i] + "\" no est\xE1 permitido en este ritual, has fallado :(";
+        // phrase = insults[i] + " is not allowed in this ritual, you have failed :(";
         hasInsulted = true;
         break;
       }
