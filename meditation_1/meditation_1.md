@@ -6,6 +6,10 @@ According with Juan Fernando Rivera and his article [El fútbol como ritual](htt
 
 [![](http://img.youtube.com/vi/Akd6HyJMYJQ/0.jpg)](https://www.youtube.com/watch?v=Akd6HyJMYJQ)
 
+In South America football plays a significant role in social dynamics –hardly understandable in other cultures– because in most of our countries is a place where most of the outsiders find a place to express theirselves and where they can belong to. But these expressions are most of the time anger and hateful manifestations against an other –which probably occupies the same place in the society but supports the arch-rival team. This has converted football into a dangerous ritual, where hooligans theft *brethren*, fight against the police and their rivals.
+
+[![](http://img.youtube.com/vi/6q_ztcTLF1Y/0.jpg)](https://www.youtube.com/watch?v=6q_ztcTLF1Y&t=27)
+
 Football in South America
 
 * Complementary gestures and codified expressions
@@ -18,7 +22,7 @@ Attending to a football match and supporting a team consists in a ritual in whic
 
 Football most of the time is a rude space which reflects the violence of the society in which it is experienced.
 
-In this ritual you are invited to support Colo - Colo in a match agains it's *archrival* Universidad de Chile [Context of historical hateful situations in match between Colo Colo and la U]. This ritual can only be successful if you don't use a violent or misogenic language.
+In this ritual you are invited to support Colo - Colo in a match agains it's *arch-rival* Universidad de Chile [Context of historical hateful situations in match between Colo Colo and la U]. This ritual can only be successful if you don't use a violent or misogenic language.
 
 * Google Speeach
 * Text analysis
