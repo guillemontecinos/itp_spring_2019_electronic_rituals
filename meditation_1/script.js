@@ -5,8 +5,22 @@
 // https://github.com/nicolehe/ITP-hello-computer-f18
 
 let phrase = "";
+const insults = ["culiao", "culeado", "madre", "perra", "conchatumadre", "conchetumare", "la concha de tu madre", "chuncho"];
 const SpeechRecognition = webkitSpeechRecognition;
 
+// p5 sketch
+let canvas;
+function setup(){
+  canvas = createCanvas(560,315);
+  canvas.position(0,0);
+  canvas.style('z-index','-1');
+}
+
+function draw(){
+  background(0);
+}
+
+// SpeechRecognition sketch
 const getSpeech = () => {
   const recognition = new SpeechRecognition();
   recognition.lang = 'es-CL';
@@ -19,7 +33,16 @@ const getSpeech = () => {
     phrase = event.results[0][0].transcript;
     console.log('result: ' + phrase);
     console.log('confidence: ' + event.results[0][0].confidence);
+
+    // for(let i = 0; i < insults.length; i++){
+    //   const insult = insults[i];
+    //   if(phrase.includes(insult)){
+    //     document.querySelector('#speech-div').textContent = phrase + " es un insulto";
+    //     break;
+    //   }
+    // }
     document.querySelector('#speech-div').textContent = phrase;
+
   };
 
   recognition.onend = () => {
@@ -32,7 +55,7 @@ const getSpeech = () => {
   };
 };
 
-document.querySelector('#my-button').onclick = () => {
-  console.log('clickity');
-  getSpeech();
-};
+// document.querySelector('#my-button').onclick = () => {
+//   console.log('clickity');
+//   getSpeech();
+// };
