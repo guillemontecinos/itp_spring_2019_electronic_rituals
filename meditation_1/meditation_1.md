@@ -10,13 +10,7 @@ In South America football plays a significant role in social dynamics –hardly 
 
 [![](http://img.youtube.com/vi/6q_ztcTLF1Y/0.jpg)](https://www.youtube.com/watch?v=6q_ztcTLF1Y&t=27)
 
-Football in South America
-
-* Complementary gestures and codified expressions
-
-* hateful expressions
-
-## Ritual
+## The Ritual
 
 Attending to a football match and supporting a team consists in a ritual in which the attendant is engaged with sort of ideology related with the team values and a bunch of prejudices and hateful links with supporters of other teams and even of the same team.
 
