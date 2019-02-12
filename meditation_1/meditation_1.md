@@ -2,7 +2,7 @@
 
 ## Background
 
-According with Juan Fernando Rivera and his article [El fútbol como ritual](https://cuadrivio.net/el-futbol-como-ritual/) football is a social phenomenon that can clearly be qualified as a ritual according with Turner's definition of a ritual. When a football match is played, everyday life gets disrupted both for players, supporters, neighbors of the stadium, police, at the same time that the stadium is a defined temporal-space framework were symbolic gestures and words are uttered the attendants. Football itself is a ritual but the sub-ritual that mostly calls my attention is ritual of supporting the team as a fan –surely because is the role I have played in the football ritual for the last 15 years.
+According with Juan Fernando Rivera and his article *[El fútbol como ritual](https://cuadrivio.net/el-futbol-como-ritual/)* football is a social phenomenon that can clearly be qualified as a ritual according with Turner's definition of a ritual. When a football match is played, everyday life gets disrupted both for players, supporters, neighbors of the stadium, police, at the same time that the stadium is a defined temporal-space framework were symbolic gestures and words are uttered the attendants. Football itself is a ritual but the sub-ritual that mostly calls my attention is ritual of supporting the team as a fan –surely because is the role I have played in the football ritual for the last 15 years.
 
 [![](http://img.youtube.com/vi/Akd6HyJMYJQ/0.jpg)](https://www.youtube.com/watch?v=Akd6HyJMYJQ)
 

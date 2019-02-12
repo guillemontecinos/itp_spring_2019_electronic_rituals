@@ -94,8 +94,8 @@ const getSpeech = () => {
     for(let i = 0; i < insults.length; i++){
       const insult = insults[i];
       if(phrase.includes(insult)){
-        phrase = "\"" + insults[i] + "\" no est\xE1 permitido en este ritual, has fallado :(";
-        // phrase = insults[i] + " is not allowed in this ritual, you have failed :(";
+        // phrase = "\"" + insults[i] + "\" no est\xE1 permitido en este ritual, has fallado :(";
+        phrase = insults[i] + " is not allowed in this ritual, you have failed :(";
         hasInsulted = true;
         break;
       }
