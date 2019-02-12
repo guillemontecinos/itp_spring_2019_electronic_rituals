@@ -6,7 +6,7 @@ According with Juan Fernando Rivera and his article *[El fútbol como ritual](ht
 
 [![](http://img.youtube.com/vi/Akd6HyJMYJQ/0.jpg)](https://www.youtube.com/watch?v=Akd6HyJMYJQ)
 
-In South America football plays a significant role in social dynamics –hardly understandable by other cultures– because in most of our countries football is a place where the left behind can find a shelter to express theirselves and where they can belong to. But these expressions are most of the time anger and hateful manifestations against an other –which probably occupies the same place in the society but supports the arch-rival team. This has converted football into a dangerous ritual, where hooligans theft *brethren*, fight against the police and their rivals.
+In South America football plays a significant role in social dynamics –hardly understandable by other cultures– because in most of our countries football is a place where the left behind can find a shelter to express theirselves and where they can belong to. But these expressions are most of the time anger and hateful manifestations against an otherness – others which probably occupies the same place in the society but supports the arch-rival team. This has converted football into a dangerous ritual, where hooligans theft *brethren*, fight against the police and their rivals.
 
 [![](http://img.youtube.com/vi/6q_ztcTLF1Y/0.jpg)](https://www.youtube.com/watch?v=6q_ztcTLF1Y&t=27)
 
