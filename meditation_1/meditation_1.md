@@ -8,16 +8,18 @@ According with Juan Fernando Rivera and his article *[El fútbol como ritual](ht
 
 In South America football plays a significant role in social dynamics –hardly understandable by other cultures– because in most of our countries football is a place where the left behind can find a shelter to express theirselves and where they can belong to. But these expressions are most of the time anger and hateful manifestations against an otherness – others which probably occupies the same place in the society but supports the arch-rival team. This has converted football into a dangerous ritual, where hooligans theft *brethren*, fight against the police and their rivals.
 
-[![](http://img.youtube.com/vi/6q_ztcTLF1Y/0.jpg)](https://www.youtube.com/watch?v=6q_ztcTLF1Y&t=27)
+[![](http://img.youtube.com/vi/6q_ztcTLF1Y/0.jpg)](https://www.youtube.com/watch?v=6q_ztcTLF1Y&t=28)
+
+In the above video, supporters of the Argentinian team River Plate attack the bus in which the players of their rival team Boca Juniors are transported. This was December 2018 at the Final of the Copa Libertadores –the most important football championship in South America– which finally was suspended. As can be seen, River's supporters play a role in which they hate Boca's players and fans so much that they even can attack them.
 
 ## The Ritual
 
-Attending to a football match and supporting a team consists in a ritual in which the attendant is engaged with sort of ideology related with the team values and a bunch of prejudices and hateful links with supporters of other teams and even of the same team.
+This ritual is about supporting a team and is called "Alentar al Colo" (Support Colo Colo). Attending a football match and supporting a team consists in a ritual in which the attendant is engaged with sort of ideology related with the team values and a bunch of prejudices and hateful links with supporters, players, and even workers of other teams. Football is most of the time a rude and macho space which reflects the violence, misogyny and economic segregation of the society in which it is experienced.
 
-Football most of the time is a rude space which reflects the violence of the society in which it is experienced.
+In this ritual the participant is invited to support Colo - Colo –the most popular Chilean football club in a match agains it's *arch-rival* Universidad de Chile. This match has a long history of violence which is expressed in the language that supporters use to refer opponent, full of misogynic terms related with the mother. But the ritual can only be successful if you don't use a violent or misogynic language.
 
-In this ritual you are invited to support Colo - Colo in a match agains it's *arch-rival* Universidad de Chile [Context of historical hateful situations in match between Colo Colo and la U]. This ritual can only be successful if you don't use a violent or misogenic language.
+For the design of the ritual [Speech Recognition API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) was used as a tool that allows to detect and write down the words are uttered by the ritual performer. The text was analyzed in terms of detecting if a banned word was said by the performer in order to decide if the ritual can be successfully completed. Additionally, by using the [Iframe API for YouTube](https://developers.google.com/youtube/iframe_api_reference) the video of the football match is displayed in the back of the screen in order to create the proper space-temporal conditions to perform the ritual.
 
-* Google Speeach
-* Text analysis
+As a ritual, it has not a clear effect in the real life space in which it is performed, but it can be called a banning-style ritual because can't be completed if some rule are violated. In this case the rule of not using a violent or misogynic language.
+
 * [Match Video](https://www.youtube.com/watch?v=vV6vuEOs1eE)
