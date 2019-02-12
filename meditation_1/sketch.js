@@ -6,6 +6,7 @@
 // and from Youtube API documentation
 // https://developers.google.com/youtube/iframe_api_reference
 
+let videoId = 'vV6vuEOs1eE';
 //Load the IFrame Player API code asynchronously.
 let tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
@@ -18,7 +19,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '390',
     width: '640',
-    videoId: 'vV6vuEOs1eE',
+    videoId: videoId,
     events: {
     }
   });
@@ -31,7 +32,7 @@ let ytWidth;
 let ytHeight;
 // let phrase = "Alentar al Colo es nuestro rito m\xE1s importante. Aqu\xED no se permiten ofensas, insultos ni misoginia. Haz click para comenzar.";
 let phrase = "As Colo-Colo fans, supporting the team is our most important ritual. In this ritual insults and misogyny are not allowed. Click to start."
-const insults = ["culiao", "culeao", "culeado", "culiaos", "culeados", "culear", "culiar", "madre", "madres", "perra", "conchatumadre", "conchetumare", "la concha de tu madre", "maricón", "maricones", "maraca", "hueco", "puta", "puto"];
+const insults = ["culiao", "culeao", "culeado", "culiaos", "culeados", "culear", "culiar", "madre", "madres", "perra", "conchatumadre", "conchetumare", "la concha de tu madre", "maricón", "maricones", "maraca", "hueco", "puta", "puto", "negro"];
 const SpeechRecognition = webkitSpeechRecognition;
 let boxWidth;
 let boxHeight;
