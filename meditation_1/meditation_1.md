@@ -21,3 +21,9 @@ In this ritual the participant is invited to support Colo - Colo –the most pop
 [Speech Recognition API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) was used for the design of the ritual as a tool that allows to detect and write down the words are uttered by the ritual performer. The text was analyzed in terms of detecting if a banned word was said by the performer in order to decide if the ritual can be successfully completed. Additionally, by using the [Iframe API for YouTube](https://developers.google.com/youtube/iframe_api_reference) the video of the football match is displayed in the back of the screen in order to create the proper space-temporal conditions to perform the ritual.
 
 As a ritual, it has not a clear effect in the real life space in which it is performed, but it can be called a banning-style ritual because can't be completed if some rule are violated, in this case the rule of not using a violent or misogynic language. I think it's important to remark that the way of building a better society by banning negative behaviors is not wrong, specially in the regard of discrimination of minorities by violent language usage.
+
+<p align="center">
+  <a href="https://vimeo.com/317116574">
+    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_1/meditation1_cover.png" align="middle" width="70%">
+  </a>
+</p>
