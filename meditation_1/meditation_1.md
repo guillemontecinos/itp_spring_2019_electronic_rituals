@@ -15,8 +15,8 @@ In South America football plays a significant role in social dynamics –hardly 
 [![](http://img.youtube.com/vi/6q_ztcTLF1Y/0.jpg)](https://www.youtube.com/watch?v=6q_ztcTLF1Y&t=28)
 
 <p align="center">
-  <a href="http://img.youtube.com/vi/6q_ztcTLF1Y/0.jpg">
-    <img src="https://www.youtube.com/watch?v=6q_ztcTLF1Y&t=28" align="middle" width="70%">
+  <a href="https://www.youtube.com/watch?v=6q_ztcTLF1Y&t=28">
+    <img src="http://img.youtube.com/vi/6q_ztcTLF1Y/0.jpg" align="middle" width="70%">
   </a>
 </p>
 
