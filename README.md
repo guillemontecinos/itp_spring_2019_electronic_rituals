@@ -4,7 +4,7 @@
 
 This document and the contents stored in this repo corresponds to the class Electronic Rituals, Oracles and Fortune Telling taught by Allison Parrish, at NYU ITP during the 2019 Spring term.
 
-## Week 2: Ritual and Society
+## Week 2 - Ritual and Society
 
 We belong to a technologized society that thinks itself as truthful and deterministic, because the narrative of the western side of the world has moved from shamans to doctors and scientists, and from gods to algorithms. That narrative –which exists in an imaginary layer of reality– intends to define our behavior without total success because by the end of the day humans keep making decision based on magic and superstition.
 
