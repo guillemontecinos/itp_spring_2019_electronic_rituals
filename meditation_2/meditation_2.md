@@ -55,3 +55,17 @@
       <p>The Devil / The Tower / The Star</p>
     </div>
 </div>
+<div align="middle">
+    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/04_final_deck_hires/18_the_moon.jpg" width="30%">
+    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/04_final_deck_hires/19_the_sun.jpg" width="30%">
+    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/04_final_deck_hires/20_judgement.jpg" width="30%">
+    <div align="middle">
+      <p>The Moon / The Sun / Judgement</p>
+    </div>
+</div>
+<div align="middle">
+    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/04_final_deck_hires/21_the_world.jpg" width="30%">
+    <div align="middle">
+      <p>The World</p>
+    </div>
+</div>
