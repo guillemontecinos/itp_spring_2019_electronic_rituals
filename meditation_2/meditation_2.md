@@ -16,18 +16,14 @@ In order to train the a DC-GAN model that allowed to predict a generative Major 
 For data cleaning process non-tarot cards images were deleted, as well as tarot-related images that didn't represent deck cards. The final dataset comprised 3700 images all of them 128x128 pixels and RGB-jpg.
 
 <p align="center">
-  <a href="https://vimeo.com/317116574">
-    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/assets/scrolling.gif" align="middle" width="70%">
-  </a>
+  <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/assets/scrolling.gif" align="middle" width="70%">
 </p>
 
 ## DC-GAN model training and samples generation
 The model was trained following Gene Kogan's [tutorial](http://ml4a.github.io/classes/itp-F18/06/) (thanks Sofía for helping me) in a *Paperspace* Ubuntu 16.04 machine and using *Gradient*. After the training, 100 samples were generated with 64 images each which were used to build the final deck.
 
 <p align="center">
-  <a href="https://vimeo.com/317116574">
-    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/assets/test_arange_0.png" align="middle" width="70%">
-  </a>
+  <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/assets/test_arange_0.png" align="middle" width="70%">
 </p>
 
 ## Deck conformation and restoration (ESRGAN)
