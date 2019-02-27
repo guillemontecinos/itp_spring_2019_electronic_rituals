@@ -6,7 +6,7 @@ In order to train the a DC-GAN model that allowed to predict a generative Major 
 
 <p align="center">
   <a href="https://vimeo.com/317116574">
-    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/05_assets/meditation_2_downloading.png" align="middle" width="50%">
+    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/05_assets/meditation_2_downloading.png" align="middle" width="30%">
   </a>
 </p>
 
