@@ -3,6 +3,15 @@
 ## Introduction
 ## Data gathering and cleaning
 In order to train the a DC-GAN model that allowed to predict a generative Major Arcana Tarot deck, a big amount of data had to be collected. Each card was searched at *Google Images* and downloaded using he Chrome extension [Image Downloader](https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj/related) which downloads all the thumbnails displayed in the page.
+
+<p align="center">
+  <a href="https://vimeo.com/317116574">
+    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/05_assets/meditation_2_downloading.png" align="middle" width="50%">
+  </a>
+</p>
+
+For data cleaning process non-tarot cards images were deleted, as well as tarot-related images that didn't represent deck cards. The final dataset comprised 3700 images all of them 128x128 pixels and RGB-jpg.
+
 ## DC-GAN model training
 ## Samples generation
 ## Deck conformation and restoration (ESRGAN)
