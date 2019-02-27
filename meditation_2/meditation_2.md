@@ -1,8 +1,8 @@
 # Meditation 2: Generative Major Arcana Deck
 
 ## Introduction
-## Data gathering
-## Data cleaning
+## Data gathering and cleaning
+In order to train the a DC-GAN model that allowed to predict a generative Major Arcana Tarot deck, a big amount of data had to be collected. Each card was searched at *Google Images* and downloaded using he Chrome extension [Image Downloader](https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj/related) which downloads all the thumbnails displayed in the page.
 ## DC-GAN model training
 ## Samples generation
 ## Deck conformation and restoration (ESRGAN)
