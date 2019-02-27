@@ -11,17 +11,15 @@
     <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/04_final_deck_hires/00_the_fool.jpg" width="30%">
     <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/04_final_deck_hires/01_the_magician.jpg" width="30%">
     <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/04_final_deck_hires/02_the_high_priest.jpg" width="30%">
-    <div style="width:30%;">
-      <p>The Fool</p>
-    </div>
-    <div style="width:30%;">
-      <p>The Fool</p>
-    </div>
-    <div style="width:30%;">
-      <p>The Fool</p>
+    <div align="middle">
+      <p>The Fool / The Magician / The High Priest</p>
     </div>
 </div>
-<div class="floated_img">
-    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/04_final_deck_hires/01_the_magician.jpg" alt="Another image">
-    <p>Description of above image</p>
+<div align="middle">
+    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/04_final_deck_hires/03_the_empress.jpg" width="30%">
+    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/04_final_deck_hires/04_the_emperor.jpg" width="30%">
+    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_2/04_final_deck_hires/05_the_hieropant.jpg" width="30%">
+    <div align="middle">
+      <p>The Empress / The Emperor / The Hieropant</p>
+    </div>
 </div>
