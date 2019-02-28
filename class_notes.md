@@ -27,3 +27,11 @@ Rituals are related with muscle memory and cultural heritage
 
 ### Tarot
 * http://word-game-workshop.decontextualize.com/tarot/
+
+## Week 5
+* [Omens](https://en.wikipedia.org/wiki/Omen)
+* [Haruspex](https://en.wikipedia.org/wiki/Haruspex)
+* *-omancy*
+* [Phrenology](https://en.wikipedia.org/wiki/Phrenology)
+* astrology
+* [Zach Blas](http://www.zachblas.info/)
