@@ -35,3 +35,10 @@ Rituals are related with muscle memory and cultural heritage
 * [Phrenology](https://en.wikipedia.org/wiki/Phrenology)
 * astrology
 * [Zach Blas](http://www.zachblas.info/)
+
+## Week 6
+* Dream interpretation
+  * protasis -> apodosis
+  * rhyming on ancient words
+  * transformations in dreams seem to be related
+* [Tracery](http://tracery.io/)
