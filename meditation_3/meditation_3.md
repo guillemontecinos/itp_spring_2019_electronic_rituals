@@ -1,3 +1,3 @@
 # Meditation 3
 
-http://guillemontecinos.cl/pages/proyects/weather_predict/
+I'm still working on documentation. The piece can be found [here](http://guillemontecinos.cl/pages/proyects/weather_predict/).
