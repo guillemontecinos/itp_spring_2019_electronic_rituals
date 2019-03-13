@@ -62,7 +62,6 @@ function predict(){
   // print it
   console.log(prediction);
   document.getElementById("predictBox").innerHTML = prediction;
-
 }
 
 // gets data
