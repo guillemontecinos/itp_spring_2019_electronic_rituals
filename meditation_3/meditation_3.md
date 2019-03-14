@@ -1,10 +1,10 @@
 # Meditation 3 - Weather predict-o-scope
 
+The test Weather predict-o-scope please click [here](http://guillemontecinos.cl/projects/weather_predict/).
+
 <p align="center">
   <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_3/interface_demo.gif" align="middle" width="70%">
 </p>
-
-I'm still working on documentation. The piece can be found [here](http://guillemontecinos.cl/projects/weather_predict/).
 
 For this meditation, in which we had to invent an “-omancy,” or a form of divination/prophecy based on observing and interpreting natural events, I decided to inspire in a Chilean popular tradition for predicting "how the weather will come this year" by observing the weather of twelve first days of the year. Chilean countryside people are strongly religion and superstitions believers, they believe –for example– that the Devil shows up during Saint John's night, the same night in which you can learn to play guitar if you sit with a guitar under a fig tree. They say, as well, that seeing a dark circle around the sun may presage that an earthquake or a storm can come soon.
 
