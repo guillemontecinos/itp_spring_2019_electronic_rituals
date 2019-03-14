@@ -35,4 +35,8 @@ any other case:
   nothing will change
 ```
 
-Finally, the
+As can be guessed there are three possible states: tomorrow will be a good day, tomorrow will be a bad day, tomorrow will be an OK day. Finally, output predictions were built from these states by using a mad lib designed following an horoscope mood, and which was filled with nouns and positive, negative or neutral adjectives randomly picked from a set of words lists I collected from internet.
+
+<p align="center">
+  <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_3/mad_lib.png" align="middle" width="70%">
+</p>
