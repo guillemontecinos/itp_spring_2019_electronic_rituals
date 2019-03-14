@@ -42,3 +42,16 @@ Rituals are related with muscle memory and cultural heritage
   * rhyming on ancient words
   * transformations in dreams seem to be related
 * [Tracery](http://tracery.io/)
+
+## Week 7
+* Telesthesia (4 kinds of)
+* mostly related with receiving information
+* presupose paranormality
+* medium is the communication channel and is always a person
+* scrying -> hypnosis
+* oomancy -> scrying eggs
+* [Bloody Mary](https://en.wikipedia.org/wiki/Bloody_Mary_%28folklore%29)
+* séance/spiritualism
+* [Fox Sisters](https://en.wikipedia.org/wiki/Fox_sisters)
+* spirit boards (ouija)
+* [sacred texts](https://sacred-texts.com/)
