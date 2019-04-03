@@ -30,7 +30,6 @@ if (frameCount % int(random(5, 10)) == 0) {
   fill(0);
   // estimate variation
   let delta = (latestData - average) / average;
-  // let delta = random(-.4, .4); //for debug purposes
   console.log(delta)
   if (random(1) > .85) {
     autoText += " "
