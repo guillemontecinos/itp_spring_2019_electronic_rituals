@@ -55,3 +55,7 @@ Rituals are related with muscle memory and cultural heritage
 * [Fox Sisters](https://en.wikipedia.org/wiki/Fox_sisters)
 * spirit boards (ouija)
 * [sacred texts](https://sacred-texts.com/)
+
+## Week 8
+### Automatic writing
+lñdlgdld sañsalsjsaañlsdkj  slskdfjñoinn lsdjñslañsdjdasñ ñkdsñsgsgsdñasñdlkjfda sdfsjosjañsldg nvcjccownwñidoowjeñfowjdasññ wjfñsdcnsñ<sldf lsdkfnñsurn.sz nkdsjdfalsken s<dfñsadjfnsañkdfjn sdnf.ksnfvaurnckncñszacs rjgorijysasldfñas nsldkfnañsdndsk njsadnsañf asnfjnñsadnfsda. lasdn.fasln.c as.dlfas.ur nvajdñgnkwjfnñsjefnsñafjk nñasjdfnvafsornrv dfjvnñarnñeonafsñuv narsfñsafnc asrfñsafsñas saava.djvnrkxnf nfk.asrv.kas4u sfnv.asjnav.s dsnfsadnfaskjdn asjdn.ascnsk,ls lasd;sFKsfsadfn slandsa.ndsakl añsksjf sñJDSFKSAJDF JSDFKSJAÑRU VNAKAJDNCÑo n´SLDNCÑASOEN NSKJDNñlsjnv askjr nkj  ÑZL.zjdfnv.sj ñzsrnclszncse besrñtdouv ñaszskjnnejnvsñnjcaer snno qlow cw  ñc dnlsejfñaosbhi 2hañUEBARI GRÑI FOUSN DO? CSOÑDJFAS L.KSBknds zvñjfnv zvnskjas sadfnsdfmasdf, asñabeli vasdbñs<kflas kkfaskjnra. snf.caksjdnca.ksjc sandksn.alsjdc cskjlasjvcns SKNDBC.askjd skSDKSDA.ASKBDF .SKBDÑ skbv ñzsurh.zdfv dfñbz ndñhurñsdbvzdr. .dzjnv.djnrz kdsffzkr.nz nxkjcn.asdn asndkvbdñdrvdrñau sa cosañosabvyrbrsk<xcñaiv krasusdñsKXDJBV RYGFBsñscvsc CÑOSCñiusn ccñsoJENCÑsksncÑsdjch sñDCNKSJCNñ naÑjncñajnc sNSKjcnñsJ skjdnksañzs vszn.zskjsnñaeN Ñskjns.kznsñnÑSVN.ZSNSVZ-S´ROINE-nÑJNS<ÑZISN ÑSSBFSÑZSVLASH kadñaskjnvzd jnksjHAL4IUAFHSLSÑAIESU FSÑÑSDCNÑAIURÑUNCJNKNKNK HOAL LA VU BEKRJNCÑ lhb 

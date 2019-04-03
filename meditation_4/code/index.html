@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.js"></script>
+    <script type="text/javascript" src="../p5_serial_server/lib/p5.serialport.js"></script>
+    <script type="text/javascript" src="auto_noise_1.js"></script>
+    <!-- <script type="text/javascript" src="analyze_markov.js"></script> -->
+  </head>
+  <body>
+    <div style="font-family: Courier;background: #ffffffe3;width: 400px;margin-left: -200px;left: 50%;position: absolute;padding: 5px;">
+      <h1 style="text-align: center;">Noise Autowriter</h1>
+      <p>
+        Instructions:
+        <ul>
+            <li>Connect your Arduino and turn on analog port #3.</li>
+            <li>Set your web serial environment.</li>
+            <li>Open your mind to what electric noise wants to tell you.</li>
+        </ul>
+      </p>
+    </div>
+    <textarea id="textBox" style="font-family:Courier;font-size: larger;position: absolute;width: 800px;height: 250px;margin: -125px 0px 0px -400px;top: 50%;left: 50%;">
+    </textarea>
+  </body>
+</html>
