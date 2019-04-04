@@ -66,7 +66,7 @@ function gotRawData(thedata) {
 function draw() {
   // update lastValues array
   lastValues.push(latestData);
-  if (lastValues.length > 2) {
+  if (lastValues.length > 5) {
     for (var i = 0; i < lastValues.length - 1; i++) {
       lastValues[i] = lastValues[i + 1];
     }

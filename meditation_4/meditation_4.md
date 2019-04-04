@@ -1,13 +1,27 @@
 # Meditation 4 - Auto Self-medium
-This meditation explores a way to interpret the electronic noise captured in an Arduino analog pin into readable-ish text. Noise is a thing usually we struggle with because blurs the information we are trying to retrieve.
+In this meditation I explored a way to interpret the electronic noise captured in an Arduino analog pin into readable-ish text. Noise is something we usually struggle with because blurs the information we are trying to retrieve, especially in low-accuracy measure instrument.
 
 <p align="center">
   <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_4/documentation/noise_autowriter.gif" align="middle" width="70%">
 </p>
 
-* originally i set the range of the parameter delta in [-0.4, 0.4], but when i tried again the circuit i realized that the oscillation of delta had changed, because the temperature had changed
-* for next time i'd like to explore how the string of characters can be human readable or meaningful. I'd like to explore using Markov chain or LSTM word generation starting from a seed interpreted from noise.
+To do this I set an analog pin in the Arduino as a reading pin and send the retrieved data through the serial communication to my laptop.
 
+```Java
+int analogPin = A3;
+int val = 0;
+
+void setup(){
+  Serial.begin(9600);
+}
+
+void loop(){
+  val = analogRead(analogPin);
+  Serial.println(val);
+}
+```
+
+The measured data was received in a p5.js sketch using Shawn Van Every's [p5.serialport](https://github.com/vanevery/p5.serialport) library and analyzed. Because we are talking of noise it is hard to know what of the read data is electronic/thermal variation and what is DC signal. So, I decided not to use the received data to feed an auto-writing algorithm, but the variation of data over n mobile average of the last 5 received values. That delta was mapped into a dictionary that contains the unicode representation of the
 
 * Draw function
 ```javascript
@@ -40,20 +54,6 @@ if (frameCount % int(random(5, 10)) == 0) {
 }
 ```
 
+Originally I set the range of delta in [-0.4, 0.4], but lately I realized the noise is related with other factors besides electronic ones, as temperature and humidity. This is because the sensor is measuring a virtual resistance between the analog pin and ground.
 
-
-* Arduino code
-
-```Java
-int analogPin = A3;
-int val = 0;
-
-void setup(){
-  Serial.begin(9600);
-}
-
-void loop(){
-  val = analogRead(analogPin);
-  Serial.println(val);
-}
-```
+For a next iteration I'd like to explore how the string of characters can be more human readable or meaningful. I'd like to explore using Markov chain or LSTM word generation, starting from a seed interpreted from noise.
