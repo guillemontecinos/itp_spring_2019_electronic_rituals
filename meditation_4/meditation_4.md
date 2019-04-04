@@ -23,7 +23,6 @@ void loop(){
 
 The measured data was received in a p5.js sketch using Shawn Van Every's [p5.serialport](https://github.com/vanevery/p5.serialport) library and analyzed. Because we are talking of noise it is hard to know what of the read data is electronic/thermal variation and what is DC signal. So, I decided not to use the received data to feed an auto-writing algorithm, but the variation of data over n mobile average of the last 5 received values. That delta was mapped into a dictionary that contains the unicode representation of the
 
-* Draw function
 ```javascript
 lastValues.push(latestData);
 if (lastValues.length > 2) {
