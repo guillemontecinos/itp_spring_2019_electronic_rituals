@@ -1,4 +1,6 @@
 # Meditation 5 - Random number generator
+
+## Part 1: `myRandom()`
 For this meditation I composed a random generator algorithm that performed a variation of the middle square method. The algorithm starts with a seed and executes the following tasks:
 1. power seed to 3
 2. check if the result of the previous operation hast 10 digits, if not it fits it to 10
@@ -37,5 +39,9 @@ function myRandom() {
 The function seems to output normally distributed random values for the first 160 iterations –the first 4 row of the sketch– after what it shows certain periodicity in the distribution. Despite the above, this function doesn't converge to a fixed value so it has a poor but succesful performance.
 
 <p align="center">
-  <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_5/documentation/random.png" align="middle" width="70%">
+  <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_5/documentation/random.png" align="middle" width="60%">
 </p>
+
+## Part 2: Using `myRandom()` in a former project
+I decided to test `myRandom()` in Meditation 3
+
