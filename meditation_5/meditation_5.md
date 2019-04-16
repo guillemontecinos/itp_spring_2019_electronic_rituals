@@ -5,4 +5,31 @@ For this meditation I composed a random generator algorithm that performed a var
 3. swipe digits, placing the 5 first digits in the second half of the numer and the last 5 digits in the first half of the number
 4. calculate the square root of the swiped number
 5. return the result in the range of 0 - 1
-6. set the result of step 4 into a 4 digit number
+6. convert the result of step 4 into a 4 digit number and set it as seed for the next random number
+
+```javascript
+let seed = 1234
+function myRandom() {
+    let digits = 0
+    let randomVal = 0
+    seed = seed * seed * seed
+    seed = seed.toString()
+    if(seed.length > 10){
+        let delta = seed.length - 10
+        seed = seed.substring(delta)
+    }
+    else{
+        while(seed.length < 10){
+            seed += '0' + seed
+        }
+    }
+    seed = seed.substring(5) + seed.substring(0,5)
+    seed = parseInt(seed)
+    seed = Math.sqrt(seed)
+    digits = Math.floor(seed).toString().length
+    randomVal = seed / Math.pow(10,digits)
+    seed /= Math.pow(10,(digits-4))
+    seed = Math.floor(seed)
+    return randomVal
+}
+```
