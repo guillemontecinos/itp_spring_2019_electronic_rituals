@@ -33,3 +33,9 @@ function myRandom() {
     return randomVal
 }
 ```
+
+The function seems to output normally distributed random values for the first 160 iterations –the first 4 row of the sketch– after what it shows certain periodicity in the distribution. Despite the above, this function doesn't converge to a fixed value so it has a poor but succesful performance.
+
+<p align="center">
+  <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_5/documentation/random.png" align="middle" width="70%">
+</p>
