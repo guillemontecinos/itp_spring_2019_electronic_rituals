@@ -43,5 +43,16 @@ The function seems to output normally distributed random values for the first 16
 </p>
 
 ## Part 2: Using `myRandom()` in a former project
-I decided to test `myRandom()` in Meditation 3
+I decided to test `myRandom()` in [Meditation 3](https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals#meditation-3---weather-predict-o-scope) for the random prediction generation part. 
+
+<p align="center">
+  <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/meditation_3/interface_demo.gif" align="middle" width="70%">
+</p>
+
+The modified chunck of code corresponding to the random prediction generator part looks like this:
+
+```javascript
+// create random prediction
+  let prediction = "Tomorrow you will have a " + adjs[Math.floor(myRandom() * adjs.length)] + " day. You should expect a " + adjs[Math.floor(myRandom() * adjs.length)] + " " + nouns[Math.floor(myRandom() * nouns.length)] + " to come your way, and because of this you might be feeling a bit " + adjs[Math.floor(myRandom() * adjs.length)] + "."
+```
 
