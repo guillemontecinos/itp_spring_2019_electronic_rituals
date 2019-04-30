@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Where do you want to have a future memory from?</h1>
+        <form action="/memory" method="GET">
+            <input type="text" name="address" placeholder="insert address" style= "width:200; height:20">
+            <input id="myButton" type="submit" name="Submit location!">
+        </form>
+        <div id="memDisp">
+        </div>
+        <script>
+            // let memoryTwo = !{JSON.stringify(memTwo)}
+
+            let buttonTrack = document.getElementById('myButton').addEventListener('click',function(){
+                console.log('button submitted')
+                addMemory()
+            })
+            
+            function addMemory(){
+                let p = document.createElement('p')
+                // p.innerHTML = memoryTwo
+                p.innerHTML = 'This is my second memory'
+                document.getElementById('memDisp').appendChild(p)
+            }
+        </script>
+    </body>
+</html>
