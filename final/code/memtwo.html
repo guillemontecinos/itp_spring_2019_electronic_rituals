@@ -1,7 +1,7 @@
 <html>
     <head></head>
     <body>
-        <h1>Where do you want to have a future memory from?</h1>
+        <h1>Where do you want to have memories from?</h1>
         <form action="/memory" method="GET">
             <input type="text" name="address" placeholder="insert address" style= "width:200; height:20">
             <input id="myButton" type="submit" name="Submit location!">
@@ -9,7 +9,39 @@
         <div id="memDisp">
         </div>
         <script>
-            // let memoryTwo = !{JSON.stringify(memTwo)}
+            //TODO: move it to the server-side
+            let memories = ["The roots of a 500-year-old tree are slowly rotting under this ground.",
+                            "A baby was just born in the house on the left.",
+                            "A giant hole opened up and everything you see fell into nothingness.",
+                            "A flamboyance of flamingos moved into this neighborhood and settled on top of the existing architecture.",
+                            "A large number of imigrants from North America settled down in this area, making it so that the natives feel unsafe here now.",
+                            "Two kinds are playing on top of a tree.",
+                            "The wind blew away a few roof tiles, the hail didn't help. That was last night, it's all good today.",
+                            "A bird is singing, a cat is starring at it.",
+                            "This area became a shopping mall.",
+                            "We are inside Walmart now.",
+                            "A female couple just got married in here.",
+                            "The circus is presenting their final performance in town.",
+                            "A young family moved in about two weeks ago.",
+                            "There is moss everywhere.",
+                            "This is a desert now.",
+                            "This area is completely submerged",
+                            "This place feels exactly the same as it did, only a bit warmer.",
+                            "Vultures are peacefully eating the remains of a human body on the ground.",
+                            "This place is crowded. There's no space to walk in here.",
+                            "I see three gorgeous waterfalls.",
+                            "A middle aged man is washing his clothes.",
+                            "The nature here is a singular experience. I've never seen anything like this.",
+                            "The traffic here is crazy! So loud! I don't even understand how they can be all driving this fast.",
+                            "This dog is very friendly.",
+                            "This street is in terrible shape.",
+                            "A family is waiting outside their car. It seem to be broken.",
+                            "There is a car following me.",
+                            "There is a man in a car following a young girl that walks back from school.",
+                            "All these trees are in blossom.",
+                            "All the leaves have fallen",
+                            "There is a rusty car on the left. It seems to have been here for years."]
+            //TODO
 
             let buttonTrack = document.getElementById('myButton').addEventListener('click',function(){
                 console.log('button submitted')
@@ -19,7 +51,7 @@
             function addMemory(){
                 let p = document.createElement('p')
                 // p.innerHTML = memoryTwo
-                p.innerHTML = 'This is my second memory'
+                p.innerHTML = memories[Math.floor(Math.random() * memories.length)]
                 document.getElementById('memDisp').appendChild(p)
             }
         </script>

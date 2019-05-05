@@ -1,0 +1,1 @@
+This folder was created to test an scraping code that will be used in the final code.

@@ -1,10 +1,21 @@
 <html>
     <head></head>
     <body>
-        <h1>What's your memory of this place?</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1556658930022!6m8!1m7!1sQSHX6nikBgRBEDxQFddP4A!2m2!1d-33.4079793200358!2d-70.65444779444225!3f0.870495455246612!4f-14.023717530362958!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <h1>Create a memory of this place.</h1>
+        <!-- <embed src="http://www.mapcrunch.com/p/-25.358655_-49.250455_303.08_-9.27_0" style="width:600;height:500;"></embed> -->
+        <div id="mapHolder"></div>
+        <script>
+            // TODO: be able to receive value async and render embed element in client side
+            let myVar = await "http://www.mapcrunch.com/p/" + {{ myVar }} + "_303.08_-9.27_0"
+            let x = document.createElement('embed')
+            x.src = myVar
+            x.style = 'width:600;height:500;'
+            document.getElementById('mapHolder').appendChild(x)
+        </script>
+
         <form action="/memory" method="POST">
-            <input type="text" name="memory" placeholder="what happened here before?" style= "width:600; height:20">
+            <!-- <input type="text" name="memory" placeholder="what happened here before?" style= "width:600; height:20"> -->
+            <input type="text" name="memory" style= "width:600; height:20">
             <input type="submit" name="Submit memory!">
         </form>
     </body>
