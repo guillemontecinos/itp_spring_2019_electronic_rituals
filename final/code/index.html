@@ -1,10 +1,19 @@
 <html>
     <head></head> 
     <body>
-        <h1>Share with us a place where you had a meaningful experience:</h1>
+        <h1 id="header"></h1>
         <form action="/" method="POST">
-            <input type="text" name="location" placeholder="Insert a location or an address">
+            <input type="text" name="location" placeholder="Insert a location or an address" autocomplete="off">
             <input type="submit" value="Submit">
         </form>
+        <script>
+            let ask_for_place = ["What place tells you who you are?",
+                                "What location is part of your identity?",
+                                "When you think about who you are, what place comes to your mind?",
+                                "Where do you call home?",
+                                "Share a place in which you have many memories."]
+            let prompt = ask_for_place[Math.floor(Math.random() * ask_for_place.length)]
+            document.getElementById("header").innerHTML = prompt
+        </script>
     </body>
 </html>

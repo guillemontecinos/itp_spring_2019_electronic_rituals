@@ -2,58 +2,126 @@
     <head></head>
     <body>
         <h1>Where do you want to have memories from?</h1>
-        <form action="/memory" method="GET">
-            <input type="text" name="address" placeholder="insert address" style= "width:200; height:20">
+        <!-- <form action="/memory" method="GET"> -->
+            <input id="myText" type="text" name="address" placeholder="insert address" style= "width:200; height:20" autocomplete="off">
             <input id="myButton" type="submit" name="Submit location!">
-        </form>
-        <div id="memDisp">
+        <!-- </form> -->
+        <div id="locDisp">
         </div>
         <script>
-            //TODO: move it to the server-side
-            let memories = ["The roots of a 500-year-old tree are slowly rotting under this ground.",
-                            "A baby was just born in the house on the left.",
-                            "A giant hole opened up and everything you see fell into nothingness.",
-                            "A flamboyance of flamingos moved into this neighborhood and settled on top of the existing architecture.",
-                            "A large number of imigrants from North America settled down in this area, making it so that the natives feel unsafe here now.",
-                            "Two kinds are playing on top of a tree.",
-                            "The wind blew away a few roof tiles, the hail didn't help. That was last night, it's all good today.",
-                            "A bird is singing, a cat is starring at it.",
-                            "This area became a shopping mall.",
-                            "We are inside Walmart now.",
-                            "A female couple just got married in here.",
-                            "The circus is presenting their final performance in town.",
-                            "A young family moved in about two weeks ago.",
-                            "There is moss everywhere.",
-                            "This is a desert now.",
-                            "This area is completely submerged",
-                            "This place feels exactly the same as it did, only a bit warmer.",
-                            "Vultures are peacefully eating the remains of a human body on the ground.",
-                            "This place is crowded. There's no space to walk in here.",
-                            "I see three gorgeous waterfalls.",
-                            "A middle aged man is washing his clothes.",
-                            "The nature here is a singular experience. I've never seen anything like this.",
-                            "The traffic here is crazy! So loud! I don't even understand how they can be all driving this fast.",
-                            "This dog is very friendly.",
-                            "This street is in terrible shape.",
-                            "A family is waiting outside their car. It seem to be broken.",
-                            "There is a car following me.",
-                            "There is a man in a car following a young girl that walks back from school.",
-                            "All these trees are in blossom.",
-                            "All the leaves have fallen",
-                            "There is a rusty car on the left. It seems to have been here for years."]
-            //TODO
+            // TODO: pass database as a JSON
+            let database = [ { id: 1,
+                latitude: 40.729462,
+                longitude: -73.993568,
+                memory: 'Since I got here I had no life.' },
+                { id: 2,
+                latitude: -33.407879,
+                longitude: -70.657822,
+                memory: 'I biked for hours and hours around the block.' },
+                { id: 3,
+                latitude: 19.0864663,
+                longitude: -97.5156873,
+                memory: 'I tested my code for a long time' }]
 
+            let userInput;
             let buttonTrack = document.getElementById('myButton').addEventListener('click',function(){
                 console.log('button submitted')
-                addMemory()
+                userInput = document.getElementById('myText').value
+                addLocation()
             })
             
-            function addMemory(){
-                let p = document.createElement('p')
-                // p.innerHTML = memoryTwo
-                p.innerHTML = memories[Math.floor(Math.random() * memories.length)]
-                document.getElementById('memDisp').appendChild(p)
+            function addLocation(){
+                let pos = get_location(userInput)
+                let x = document.createElement('embed')
+                x.src = "http://www.mapcrunch.com/p/" + pos[0] + "_" + pos[1] + "_303.08_-9.27_0"
+                x.style = 'width:600;height:500;'
+                document.getElementById('locDisp').appendChild(x)
             }
+            //=================== Marcela's code ===================
+            function get_location(user_input) {
+                // array of memories from database
+                let memories = [];
+                
+                for (let i = 0; i < database.length; i++) {
+                memories.push(database[i].memory); 
+                    // memories.push(database[i]);
+                }
+
+                // delete special characters from user's question, make it lowercase
+                var question = user_input.toLowerCase().split(" ");
+
+                // list of characters not to be considered in the analisis
+                let unwanted_chars = "!$&*()-=_+[]{}\/\\|:\";',.<>".split("");
+
+                // list of words not to be considered in the analisis
+                let unwanted_words = ["the", "a", "this", "is", "are", "i", "that", "an", "did", "didn't", "was", "wasn't", "and", "you", "we", "us", "me", "my"]
+
+                for (let i = question.length - 1; i >= 0; i--) {
+                    
+                    // if a character is in the unwanted_chars list, remove it from the string
+                    for (let ii = 0; ii < unwanted_chars.length; ii++) {
+
+                    question[i] = question[i].replace(unwanted_chars[ii], "");
+                    }
+                    
+                    // if a word in the user's input is part of the unwanted_words list, remove this word from the input
+                    for (let j = 0; j < unwanted_words.length; j++) {
+
+                    if (question[i] == unwanted_words[j]) {
+                        question.splice(i, 1);
+                        break;
+                    }
+                    }
+                }
+
+                console.log("user question: ", user_input);
+                console.log("user question after processing: ", question);
+
+
+                var dist_from_memory = {};
+                var prox;
+
+                // for every memory in the database, compare each word to the words in the input. for each matching word, add 1 to their proximity level (prox)
+                for (let i = memories.length - 1; i >= 0; i--) {
+                    prox = 0;
+                    let memory_words = memories[i].split(" ");
+
+                    for (let j = 0; j < memory_words.length; j++) {
+                    for (let k = 0; k < question.length; k++) {
+                        if (memory_words[j] == question[k]) {
+                        prox++;
+                        }
+                    }
+                    }
+
+                    // if the proximity level of the memory hasn't yet occurred, add this number to the dist_from_memory object, and assign the memory's index as an array to the key value. otherwise, push the index number to the key's value
+                    if (dist_from_memory[prox] != undefined) {
+                    dist_from_memory[prox].push(i);
+                    } else {
+                    dist_from_memory[prox] = [i];
+                    }
+                }
+
+                console.log(dist_from_memory);
+                
+                var memory_index;
+                
+                for (let i = question.length; i >= 0; i--) {
+                    console.log(i,dist_from_memory[i])
+                    if (dist_from_memory[i] !== undefined) {
+                    memory_index = dist_from_memory[i][0];
+                    console.log(dist_from_memory[i][0]);
+                    break;
+                    }
+                }
+                
+                console.log(memory_index, database[memory_index])
+                
+                let pos = [database[memory_index].latitude, database[memory_index].longitude];
+
+                return pos;
+            }
+            //=================== Marcela's code ===================
         </script>
     </body>
 </html>

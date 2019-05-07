@@ -1,12 +1,19 @@
 <html>
     <head></head>
     <body>
-        <h1>Create a memory of this place.</h1>
-        <!-- <embed src="http://www.mapcrunch.com/p/-25.358655_-49.250455_303.08_-9.27_0" style="width:600;height:500;"></embed> -->
+        <h1 id="header">Create a memory of this place.</h1>
         <div id="mapHolder"></div>
         <script>
-            // TODO: be able to receive value async and render embed element in client side
-            let myVar = await "http://www.mapcrunch.com/p/" + {{ myVar }} + "_303.08_-9.27_0"
+            let ask_for_memory = ["What happened here that is meaningful to you?",
+                                    "Take a look around. What do you remember?",
+                                    "How does this place speak to who you are?",
+                                    "Share a memory of yours in here.",
+                                    "Why is this place important to you?"]
+            let prompt = ask_for_memory[Math.floor(Math.random() * ask_for_memory.length)]
+            document.getElementById("header").innerHTML = prompt
+        </script>
+        <script>
+            let myVar = "http://www.mapcrunch.com/p/" + "{{ myVar }}" + "_303.08_-9.27_0"
             let x = document.createElement('embed')
             x.src = myVar
             x.style = 'width:600;height:500;'
@@ -15,7 +22,7 @@
 
         <form action="/memory" method="POST">
             <!-- <input type="text" name="memory" placeholder="what happened here before?" style= "width:600; height:20"> -->
-            <input type="text" name="memory" style= "width:600; height:20">
+            <input type="text" name="memory" style= "width:600; height:20" autocomplete="off">
             <input type="submit" name="Submit memory!">
         </form>
     </body>

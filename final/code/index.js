@@ -11,7 +11,7 @@ app.set('view engine', 'html');
 app.set('views', __dirname);
 app.use(bodyParser.urlencoded({ extended: false }))
 
-let client = new Client({database: 'mapmemory'})
+let client = new Client({database: 'mapmemory2'})
 client.connect()
 
 // storage variables
@@ -22,6 +22,18 @@ let address = 'NA'
 
 app.get('/', function(req, res){
     res.sendFile(path.join(__dirname + '/index.html'))
+    //request to database
+    client.query('SELECT * FROM posts', (err, resSQL) => {
+        if (err) {
+          console.log(err.stack)
+        } else {
+            let someArray = resSQL.rows
+            console.log(someArray[1].memory)
+            // res.render('index', {
+            //     someArray
+            // });
+        }
+      })
 })
 
 app.post('/', function(req, res){
@@ -42,27 +54,26 @@ app.post('/memory', function(req, res){
     memory = req.body.memory
     console.log('Memory: ' + memory)
     res.sendFile(path.join(__dirname + '/memtwo.html'))
+
+    // post on database
+    client.query('INSERT INTO posts (latitude, longitude, memory) VALUES ($1, $2, $3)',[lat, lon, memory], (err, res) => {
+        if (err) {
+            console.log(err.stack)
+        } else {
+            console.log('posted successfully')
+        }
+      })
 })
 
 app.get('/memory', function(req, res){
     // TODO: add input confirmation
     address = req.query.address
     console.log('Address: ' + address)
-
-    // post on database
-    client.query('INSERT INTO posts (lat1, lon1, memory, address) VALUES ($1, $2, $3, $4)',[lat, lon, memory, address], (err, res) => {
-        if (err) {
-          console.log(err.stack)
-        } else {
-            console.log('posted successfully')
-        }
-      })
-    
     // pass variable from express to client-side js
     // res.render('/memtwo', function(req, res){
     //     memoryTwo: 'This is my second memory'
     // })
-    // res.redirect('/')
+    res.redirect('/')
 })
 
 
@@ -74,23 +85,19 @@ app.listen(3000, function(){
 
 
 let scrape = async (loc) => {
-    // const browser = await puppeteer.launch()
-    // const page = await browser.newPage()
-    // await page.goto('https://www.latlong.net/')
-    // await page.type('#place', loc)
-    // await page.click('#btnfind')
-    // await page.waitFor(1500)
-    // const result = await page.evaluate(()=>{
-    //     let latitude = document.getElementById('lat').value
-    //     let longitude = document.getElementById('lng').value
-    //     return {
-    //         latitude, longitude
-    //     }
-    // })
-    // browser.close()
-    // return result
-    // TODO: uncomment above and comment below
-    return {
-                latitude:-25.358655, longitude:-49.250455
-            }
+    const browser = await puppeteer.launch()
+    const page = await browser.newPage()
+    await page.goto('https://www.latlong.net/')
+    await page.type('#place', loc)
+    await page.click('#btnfind')
+    await page.waitFor(1500)
+    const result = await page.evaluate(()=>{
+        let latitude = document.getElementById('lat').value
+        let longitude = document.getElementById('lng').value
+        return {
+            latitude, longitude
+        }
+    })
+    browser.close()
+    return result
 }
