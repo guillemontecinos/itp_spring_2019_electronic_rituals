@@ -17,44 +17,32 @@ client.connect()
 // storage variables
 let location
 let lat, lon
-let memory = 'NA'
-let address = 'NA'
+let memory
 
+// first connection to server
 app.get('/', function(req, res){
     res.sendFile(path.join(__dirname + '/index.html'))
-    //request to database
-    client.query('SELECT * FROM posts', (err, resSQL) => {
-        if (err) {
-          console.log(err.stack)
-        } else {
-            let someArray = resSQL.rows
-            console.log(someArray[1].memory)
-            // res.render('index', {
-            //     someArray
-            // });
-        }
-      })
 })
 
+// location posted to server, then scrape and render to url in client side
 app.post('/', function(req, res){
     location = req.body.location
     scrape(location).then((value) => {
         lat = value.latitude
         lon = value.longitude
         let myVar = lat + '_' + lon 
-        console.log(myVar)
+        // console.log('Scraped (debug mode)')
         res.render('memone',{
             myVar
         })
     })
 })
 
+// memory received in server and posted to database. memtwo sent back to allow question
 app.post('/memory', function(req, res){
     // TODO: add input confirmation
     memory = req.body.memory
     console.log('Memory: ' + memory)
-    res.sendFile(path.join(__dirname + '/memtwo.html'))
-
     // post on database
     client.query('INSERT INTO posts (latitude, longitude, memory) VALUES ($1, $2, $3)',[lat, lon, memory], (err, res) => {
         if (err) {
@@ -63,26 +51,26 @@ app.post('/memory', function(req, res){
             console.log('posted successfully')
         }
       })
+    // console.log('posted to database (debug mode)')
+    res.sendFile(path.join(__dirname + '/memtwo.html'))
 })
 
 app.get('/memory', function(req, res){
-    // TODO: add input confirmation
-    address = req.query.address
-    console.log('Address: ' + address)
-    // pass variable from express to client-side js
-    // res.render('/memtwo', function(req, res){
-    //     memoryTwo: 'This is my second memory'
-    // })
-    res.redirect('/')
+     //request to database
+     client.query('SELECT * FROM posts', (err, resSQL) => {
+        if (err) {
+          console.log(err.stack)
+        } else {
+            let dbContent = resSQL.rows
+            console.log(dbContent)
+            res.json(dbContent)
+        }
+      })
 })
-
-
 
 app.listen(3000, function(){
     console.log('App listening at port 3000')
 })
-
-
 
 let scrape = async (loc) => {
     const browser = await puppeteer.launch()
@@ -100,4 +88,8 @@ let scrape = async (loc) => {
     })
     browser.close()
     return result
+    // return {
+    //     latitude: 40.729462,
+    //     longitude: -73.993568
+    // }
 }

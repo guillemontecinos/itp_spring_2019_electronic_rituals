@@ -1,27 +1,26 @@
 <html>
     <head></head>
     <body>
-        <h1>Where do you want to have memories from?</h1>
+        <h1>Thank you for sharing. You may now ask your question, and I will show you where to look for your answer.</h1>
         <!-- <form action="/memory" method="GET"> -->
-            <input id="myText" type="text" name="address" placeholder="insert address" style= "width:200; height:20" autocomplete="off">
+            <input id="myText" type="text" name="question" placeholder="...?" style= "width:200; height:20" autocomplete="off">
             <input id="myButton" type="submit" name="Submit location!">
         <!-- </form> -->
         <div id="locDisp">
         </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script>
-            // TODO: pass database as a JSON
-            let database = [ { id: 1,
-                latitude: 40.729462,
-                longitude: -73.993568,
-                memory: 'Since I got here I had no life.' },
-                { id: 2,
-                latitude: -33.407879,
-                longitude: -70.657822,
-                memory: 'I biked for hours and hours around the block.' },
-                { id: 3,
-                latitude: 19.0864663,
-                longitude: -97.5156873,
-                memory: 'I tested my code for a long time' }]
+            let database
+            let data
+            $.ajax({
+                url: '/memory',
+                type:'GET',
+                data: JSON.stringify(data),
+                dataType: 'json',
+                }).done(function(data) {
+                    console.log(data);
+                    database = data
+            });  
 
             let userInput;
             let buttonTrack = document.getElementById('myButton').addEventListener('click',function(){
