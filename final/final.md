@@ -8,3 +8,10 @@ Cartographic Oracle is a web site that promts visitors to connect on of their me
 </p>
 
 WIP
+
+Video:
+<p align="center">
+  <a href="https://vimeo.com/335269255">
+    <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/final/documentation/memone.gif" align="middle" width="70%">
+  </a>
+</p>
