@@ -6,3 +6,5 @@ Cartographic Oracle is a web site that promts visitors to connect on of their me
 <p align="center">
   <img src="https://github.com/guillemontecinos/itp_spring_2019_electronic_rituals/blob/master/final/documentation/index.gif" align="middle" width="70%">
 </p>
+
+>>> WIP <<<
